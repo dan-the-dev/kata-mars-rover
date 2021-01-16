@@ -1,4 +1,4 @@
-class Kata {
+class MarsRover {
     public fun exec(): Boolean
     {
         return true
