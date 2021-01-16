@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
+import kotlin.test.Ignore
 
 internal class MarsRoverTest {
 
@@ -28,6 +29,24 @@ internal class MarsRoverTest {
         marsRover.exec(Instructions.fromString("FFF"))
 
         assertEquals(3, marsRover.latitude())
+    }
+
+    @Test
+    fun testMarsRoverGoesBackwardOnceWhenReceivingBCommand() {
+        val marsRover = MarsRover()
+
+        marsRover.exec(Instructions.fromString("B"))
+
+        assertEquals(-1, marsRover.latitude())
+    }
+
+    @Test
+    fun testMarsRoverGoesBackwardThirdWhenReceivingBBBCommand() {
+        val marsRover = MarsRover()
+
+        marsRover.exec(Instructions.fromString("BBB"))
+
+        assertEquals(-3, marsRover.latitude())
     }
 
 }
