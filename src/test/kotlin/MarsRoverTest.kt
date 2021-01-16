@@ -49,4 +49,19 @@ internal class MarsRoverTest {
         assertEquals(-3, marsRover.latitude())
     }
 
+    @Test
+    fun testMarsRoverWatchNorthWhenInstantiated() {
+        val marsRover = MarsRover()
+
+        assertEquals("North", marsRover.facing())
+    }
+
+    @Test
+    fun testMarsRoverWatchEastWhenMovedRight() {
+        val marsRover = MarsRover()
+
+        marsRover.exec(Instructions.fromString("R"))
+
+        assertEquals("East", marsRover.facing())
+    }
 }
