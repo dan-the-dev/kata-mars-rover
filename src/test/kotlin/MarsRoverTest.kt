@@ -1,17 +1,33 @@
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 
-internal class MarsRoverTest() {
+internal class MarsRoverTest {
 
     @Test
-    fun testShallPass() {
-        assertEquals(1, 1)
+    fun testMarsRoverGoesForwardOnceWhenReceivingFCommand() {
+        val marsRover = MarsRover()
+
+        marsRover.exec(Instructions.fromString("F"))
+
+        assertEquals(1, marsRover.latitude())
     }
 
     @Test
-    fun testHandleReturnTrue() {
+    fun testMarsRoverGoesForwardTwiceWhenReceivingFFCommand() {
         val marsRover = MarsRover()
-        assertEquals(true, marsRover.exec())
+
+        marsRover.exec(Instructions.fromString("FF"))
+
+        assertEquals(2, marsRover.latitude())
+    }
+
+    @Test
+    fun testMarsRoverGoesForwardThirdWhenReceivingFFFCommand() {
+        val marsRover = MarsRover()
+
+        marsRover.exec(Instructions.fromString("FFF"))
+
+        assertEquals(3, marsRover.latitude())
     }
 
 }

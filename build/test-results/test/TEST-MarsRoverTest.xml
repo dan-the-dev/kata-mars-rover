@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MarsRoverTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-01-16T23:20:30" hostname="MacBook-Air-di-Daniele.local" time="0.036">
+  <properties/>
+  <testcase name="testMarsRoverGoesForwardOnceWhenReceivingFCommand()" classname="MarsRoverTest" time="0.029"/>
+  <testcase name="testMarsRoverGoesForwardThirdWhenReceivingFFFCommand()" classname="MarsRoverTest" time="0.002"/>
+  <testcase name="testMarsRoverGoesForwardTwiceWhenReceivingFFCommand()" classname="MarsRoverTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
