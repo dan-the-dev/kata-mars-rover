@@ -1,6 +1,6 @@
 package strategy
 
-interface MoveStrategy {
-    fun move(position: Int): Int
+interface MoveStrategy : Strategy<Int> {
+    override fun execute(value: Int): Int
 }
 

@@ -1,5 +1,6 @@
 package strategy
 
-interface TurnStrategy {
-    fun turn(cardinalPoint: String): String
+interface TurnStrategy : Strategy<String> {
+    override fun execute(value: String): String
 }
+

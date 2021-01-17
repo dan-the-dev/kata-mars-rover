@@ -1,6 +1,6 @@
 package strategy
 
-interface Strategy {
-    fun execute(value: Any): Any
+interface Strategy<T> {
+    fun execute(value: T) : T
 }
 
