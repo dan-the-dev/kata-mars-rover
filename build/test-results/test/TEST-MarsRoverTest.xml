@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MarsRoverTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-01-16T23:47:46" hostname="MacBook-Air-di-Daniele.local" time="0.073">
+<testsuite name="MarsRoverTest" tests="7" skipped="1" failures="0" errors="0" timestamp="2021-01-17T00:26:53" hostname="MacBook-Air-di-Daniele.local" time="0.06">
   <properties/>
-  <testcase name="testMarsRoverWatchNorthWhenInstantiated()" classname="MarsRoverTest" time="0.032"/>
-  <testcase name="testMarsRoverGoesBackwardOnceWhenReceivingBCommand()" classname="MarsRoverTest" time="0.004"/>
-  <testcase name="testMarsRoverGoesBackwardThirdWhenReceivingBBBCommand()" classname="MarsRoverTest" time="0.015"/>
-  <testcase name="testMarsRoverWatchEastWhenMovedRight()" classname="MarsRoverTest" time="0.001"/>
-  <testcase name="testMarsRoverGoesForwardOnceWhenReceivingFCommand()" classname="MarsRoverTest" time="0.001"/>
-  <testcase name="testMarsRoverGoesForwardThirdWhenReceivingFFFCommand()" classname="MarsRoverTest" time="0.003"/>
+  <testcase name="testMarsRoverWatchNorthWhenInstantiated()" classname="MarsRoverTest" time="0.027"/>
+  <testcase name="testMarsRoverGoesBackwardOnceWhenReceivingBCommand()" classname="MarsRoverTest" time="0.014"/>
+  <testcase name="testMarsRoverGoesBackwardThirdWhenReceivingBBBCommand()" classname="MarsRoverTest" time="0.002"/>
+  <testcase name="testMarsRoverWatchEastWhenMovedRight()" classname="MarsRoverTest" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase name="testMarsRoverGoesForwardOnceWhenReceivingFCommand()" classname="MarsRoverTest" time="0.003"/>
+  <testcase name="testMarsRoverGoesForwardThirdWhenReceivingFFFCommand()" classname="MarsRoverTest" time="0.001"/>
   <testcase name="testMarsRoverGoesForwardTwiceWhenReceivingFFCommand()" classname="MarsRoverTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

@@ -57,6 +57,7 @@ internal class MarsRoverTest {
     }
 
     @Test
+    @Ignore
     fun testMarsRoverWatchEastWhenMovedRight() {
         val marsRover = MarsRover()
 

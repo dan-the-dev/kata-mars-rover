@@ -1,3 +1,7 @@
+import strategy.MoveBackwardStrategy
+import strategy.MoveForwardStrategy
+import strategy.MoveStrategy
+
 class MarsRover {
     private var facing: String = NORTH
     private var latitude: Int = 0
@@ -6,14 +10,17 @@ class MarsRover {
     fun exec(instructions: Instructions): Unit {
         instructions.instructions.forEach {
             val command = it.toString()
+
             if (command == FORWARD_COMMAND) {
-                this.latitude++
+                executeCommand(MoveForwardStrategy())
             } else if (command == BACKWARD_COMMAND) {
-                this.latitude--
-            } else {
-                this.facing = EAST
+                executeCommand(MoveBackwardStrategy())
             }
         }
+    }
+
+    private fun executeCommand(strategy: MoveStrategy) {
+        this.latitude = strategy.move(this.latitude)
     }
 
     fun latitude(): Int {
