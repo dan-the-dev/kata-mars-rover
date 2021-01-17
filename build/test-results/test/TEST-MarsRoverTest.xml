@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MarsRoverTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2021-01-17T22:53:12" hostname="MacBook-Air-di-Daniele.local" time="0.083">
+  <properties/>
+  <testcase name="testMarsRoverIsAt0Latitude0LongitudeAsDefault()" classname="MarsRoverTest" time="0.053"/>
+  <testcase name="testItMovesLatitudeForwardByTwoWhenReceivingFFCommand()" classname="MarsRoverTest" time="0.004"/>
+  <testcase name="testMarsRoverFaceNorthAsDefault()" classname="MarsRoverTest" time="0.002"/>
+  <testcase name="testShallPass()" classname="MarsRoverTest" time="0.002"/>
+  <testcase name="testItMovesLatitudeForwardByOneWhenReceivingFCommand()" classname="MarsRoverTest" time="0.002"/>
+  <testcase name="testItTurnsToWestWhenReceivingLCommand()" classname="MarsRoverTest" time="0.002"/>
+  <testcase name="testItMovesLatitudeBackByOneWhenReceivingBCommand()" classname="MarsRoverTest" time="0.002"/>
+  <testcase name="testItMovesLatitudeBackByThreeWhenReceivingBBBCommand()" classname="MarsRoverTest" time="0.001"/>
+  <testcase name="testItTurnsToEastWhenReceivingRCommand()" classname="MarsRoverTest" time="0.002"/>
+  <testcase name="testItMovesLatitudeForwardByTwoWhenReceivingFFFCommand()" classname="MarsRoverTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
